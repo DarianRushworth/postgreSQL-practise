@@ -19,9 +19,10 @@ module.exports = (sequelize, DataTypes) => {
       type:DataTypes.STRING,
       allowNull: false,
       unique: true
-  }, phone: {
+  }, phone: DataTypes.INTEGER},
+  {
     sequelize,
     modelName: 'user',
-  }});
+  });
   return user;
 };
